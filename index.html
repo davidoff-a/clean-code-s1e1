@@ -6,57 +6,57 @@
   </head>
   <body class="general">
     <header class="header">
-      <img src="./eisenhower-matrix.jpg" class="header-img" alt="eisenhower matrix">
+      <img src="./eisenhower-matrix.jpg" class="header__img" alt="eisenhower matrix">
         <a 
-            class="header-link" 
+            class="header__link" 
             href="https://goal-life.com/page/method/matrix-eisenhower">
                 Want more details?
         </a>
     </header>
     <main>
       <article class="container">
-        <section id="todos-add-task">
-          <h3 class="todos-title todos-title-add">
+        <section class="todos">
+          <h3 class="todos__title todos__title_add">
             Add Item
           </h3>
-          <div class="task-row-wrapper">
-            <input id="new-task" class="task" type="text">
-            <button class="todos-btn">Add</button>
+          <div class="todos__wrapper">
+            <input id="todos__task_add" class="task" type="text">
+            <button class="todos__btn">Add</button>
           </div>
         </section>
-        <section>
-          <h3 class="todos-title">Todo</h3>
-          <ul id="incomplete-tasks" class="todos-list">
-            <li class="todos-list-item">
-              <input type="checkbox"  class="todos-flag">
-              <label class="task todos-lbl ">Pay Bills</label>
-              <input type="text" class="todos-input todos-input-hide task">
-              <button class="todos-btn edit">Edit</button>
-              <button class="todos-btn del">
-                <img src="./remove.svg"class="del-img" alt="remove task">
+        <section  class="todos">
+          <h3 class="todos__title">Todo</h3>
+          <ul id="todos__incomplete-tasks" class="todos__list">
+            <li class="todos__list-item">
+              <input type="checkbox"  class="todos__flag">
+              <label class="task todos__lbl ">Pay Bills</label>
+              <input type="text" class="todos__input todos__input_hide task">
+              <button class="todos__btn edit">Edit</button>
+              <button class="todos__btn del">
+                <img src="./remove.svg"class="del__img" alt="remove task">
               </button>
             </li>
-            <li class="todos-list-item edit-mode">
-              <input type="checkbox" class="todos-flag">
-              <label class="task todos-lbl">Go Shopping</label>
-              <input type="text" value="Go Shopping" class="task todos-input">
-              <button class="todos-btn edit">Save</button>
-              <button class="todos-btn del">
-                <img src="./remove.svg" class="del-img" alt="remove task">
+            <li class="todos__list-item todos__edit-mode">
+              <input type="checkbox" class="todos__flag">
+              <label class="task todos__lbl">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="task todos__input">
+              <button class="todos__btn edit">Save</button>
+              <button class="todos__btn del">
+                <img src="./remove.svg" class="del__img" alt="remove task">
               </button>
             </li>
           </ul>
         </section>
-        <section>
-          <h3 class="todos-title">Completed</h3>
-          <ul id="completed-tasks" class="todos-list">
-            <li class="todos-list-item">
-              <input type="checkbox"  class="todos-flag" checked>
-              <label class="task todos-lbl">See the Doctor</label>
-              <input type="text" class="task todos-input todos-input-hide">
-              <button class="todos-btn edit">Edit</button>
-              <button class="todos-btn del">
-                <img src="./remove.svg" class="del-img" alt="remove task">
+        <section  class="todos">
+          <h3 class="todos__title">Completed</h3>
+          <ul id="todos__completed-tasks" class="todos__list">
+            <li class="todos__list-item">
+              <input type="checkbox"  class="todos__flag" checked>
+              <label class="task todos__lbl">See the Doctor</label>
+              <input type="text" class="task todos__input todos__input_hide">
+              <button class="todos__btn edit">Edit</button>
+              <button class="todos__btn del">
+                <img src="./remove.svg" class="del__img" alt="remove task">
               </button>
             </li>
           </ul>
