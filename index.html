@@ -5,58 +5,64 @@
     <link rel="stylesheet" href="style.css"  media="screen" charset="utf-8">
   </head>
   <body class="general">
-    <div class="header">
+    <header class="header">
       <img src="./eisenhower-matrix.jpg" class="header-img">
         <a 
             class="header-link" 
             href="https://goal-life.com/page/method/matrix-eisenhower">
                 Want more details?
         </a>
-    </div>
-    <div class="container">
-      <div id="todos-add-task">
-        <h3 class="todos-title todos-title-add">
-          Add Item
-        </h3>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task" type="text">
-          <button class="todos-btn">Add</button>
-        </div>
-      </div>
-      <h3 class="todos-title">Todo</h3>
-      <ul id="incomplete-tasks" class="todos-list">
-        <li class="todos-list-item">
-          <input type="checkbox"  class="todos-flag">
-          <label class="task todos-lbl ">Pay Bills</label>
-          <input type="text" class="todos-input todos-input-hide task">
-          <button class="todos-btn edit">Edit</button>
-          <button class="todos-btn del">
-            <img src="./remove.svg"class="del-img">
-          </button>
-        </li>
-        <li class="todos-list-item edit-mode">
-          <input type="checkbox" class="todos-flag">
-          <label class="task todos-lbl">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task todos-input">
-          <button class="todos-btn edit">Save</button>
-          <button class="todos-btn del">
-            <img src="./remove.svg" class="del-img">
-          </button>
-        </li>
-      </ul>
-      <h3 class="todos-title">Completed</h3>
-      <ul id="completed-tasks" class="todos-list">
-        <li class="todos-list-item">
-          <input type="checkbox"  class="todos-flag" checked>
-          <label class="task todos-lbl">See the Doctor</label>
-          <input type="text" class="task todos-input todos-input-hide">
-          <button class="todos-btn edit">Edit</button>
-          <button class="todos-btn del">
-            <img src="./remove.svg" class="del-img">
-          </button>
-        </li>
-      </ul>
-    </div>
+    </header>
+    <main>
+      <article class="container">
+        <section id="todos-add-task">
+          <h3 class="todos-title todos-title-add">
+            Add Item
+          </h3>
+          <div class="task-row-wrapper">
+            <input id="new-task" class="task" type="text">
+            <button class="todos-btn">Add</button>
+          </div>
+        </section>
+        <section>
+          <h3 class="todos-title">Todo</h3>
+          <ul id="incomplete-tasks" class="todos-list">
+            <li class="todos-list-item">
+              <input type="checkbox"  class="todos-flag">
+              <label class="task todos-lbl ">Pay Bills</label>
+              <input type="text" class="todos-input todos-input-hide task">
+              <button class="todos-btn edit">Edit</button>
+              <button class="todos-btn del">
+                <img src="./remove.svg"class="del-img">
+              </button>
+            </li>
+            <li class="todos-list-item edit-mode">
+              <input type="checkbox" class="todos-flag">
+              <label class="task todos-lbl">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="task todos-input">
+              <button class="todos-btn edit">Save</button>
+              <button class="todos-btn del">
+                <img src="./remove.svg" class="del-img">
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="todos-title">Completed</h3>
+          <ul id="completed-tasks" class="todos-list">
+            <li class="todos-list-item">
+              <input type="checkbox"  class="todos-flag" checked>
+              <label class="task todos-lbl">See the Doctor</label>
+              <input type="text" class="task todos-input todos-input-hide">
+              <button class="todos-btn edit">Edit</button>
+              <button class="todos-btn del">
+                <img src="./remove.svg" class="del-img">
+              </button>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
