@@ -20,8 +20,9 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-  .header { text-align: center;
+@media (max-width: 768px) {
+  .header { 
+    text-align: center;
   }
 }
 
@@ -43,7 +44,7 @@
 }
 
 .todos-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
   list-style: none;
   display: flex;
@@ -62,10 +63,10 @@
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
-  outline:none;
+  outline: none;
 }
 
-.todos-btn:hover {
+.todos-btn: hover {
   color: #3a3A3a;
 }
 
@@ -93,7 +94,7 @@
   color: #888;
 }
 
-.todos-flag:focus {
+.todos-flag: focus {
   color: #333;
 }
 
@@ -104,67 +105,68 @@
 }
 
 #new-task {
-  width:318px;
+  width: 318px;
 }
-todos-btn:hover {
+
+todos-btn: hover {
   color: #0FC57C;
 }
 
 /* Task list */
-.todos-list-item{
+.todos-list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.todos-flag{
+.todos-flag {
   margin: 0 10px;
 }
 
 .todos-lbl {
   padding-left: 10px;
-  box-sizing:border-box;
+  box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.todos-input{
+.todos-input {
   width: 226px
 }
 
-.del:hover{
-  color:#CF2323;
+.del: hover {
+  color: #CF2323;
 }
 
-.del-img{
+.del-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.del-img:hover {
-  transform:rotateZ(0);
+.del-img: hover {
+  transform: rotateZ(0);
 }
 
 /* Completed */
 #completed-tasks.todos-lbl {
   text-decoration: line-through
-  color:#888;
+  color: #888;
 }
 
 /* Edit Task */
 .todos-input-hide {
-  display:none
+  display: none
 }
 
-.edit-mode.todos-input{
-  display:inline-block;
-  width:224px
+.edit-mode.todos-input {
+  display: inline-block;
+  width: 224px
 }
 
-.edit-mode .todos-lbl{
-  display:none;
+.edit-mode .todos-lbl {
+  display: none;
 }
