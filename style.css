@@ -35,7 +35,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -134,7 +134,7 @@ todos-btn: hover {
 }
 
 .todos-input {
-  width: 226px
+  width: 226px;
 }
 
 .del: hover {
@@ -153,18 +153,18 @@ todos-btn: hover {
 
 /* Completed */
 #completed-tasks.todos-lbl {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .todos-input-hide {
-  display: none
+  display: none;
 }
 
 .edit-mode.todos-input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit-mode .todos-lbl {
