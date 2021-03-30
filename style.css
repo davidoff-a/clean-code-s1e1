@@ -5,6 +5,12 @@
   font-family: Lato, sans-serif;
 }
 
+.container {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
 .header {
   width: 500px;
   margin: 0 auto;
@@ -26,15 +32,8 @@
   }
 }
 
-.container {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
-
 .todos__wrapper {
   display: flex;
-  /* margin-top: 20px; */
 }
 
 .task {
@@ -44,13 +43,17 @@
 }
 
 .todos__title {
-  color: #333;
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+}
+
+.todos__title_add {
+  display: block;
+  margin: 0 0 20px;
 }
 
 .todos__btn {
@@ -65,7 +68,7 @@
 }
 
 .todos__btn:hover {
-  color: #3a3A3a;
+  color: #0FC57C;
 }
 
 .todos__list {
@@ -86,10 +89,8 @@
   align-items: center;
 }
 
-/* Heading */
-
 .todos__flag {
-  margin: 0;
+  margin: 0 10px;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
@@ -101,28 +102,7 @@
   color: #888;
 }
 
-.todos__flag:focus {
-  color: #333;
-}
-
-/* New Task */
-.todos__title_add {
-  display: block;
-  margin: 0 0 20px;
-}
-
-.todos__btn:hover {
-  color: #0FC57C;
-}
-
-/* Task list */
-
-
-.todos__flag {
-  margin: 0 10px;
-}
-
-.todos__lbl {
+.todos__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -148,7 +128,7 @@
 }
 
 /* Completed */
-#todos__completed-tasks .todos__lbl {
+#todos__completed-tasks .todos__label {
   text-decoration: line-through;
   color: #888;
 }
@@ -158,11 +138,11 @@
   display: none;
 }
 
-.todos__edit-mode.todos__input {
+.todos__edit-mode .todos__input {
   display: inline-block;
   width: 224px;
 }
 
-.todos__edit-mode .todos__lbl {
+.todos__edit-mode .todos__label {
   display: none;
 }

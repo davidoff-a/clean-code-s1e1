@@ -34,7 +34,7 @@ var createNewTaskElement=function(taskString){
     listItem.className="todos__list-item";
 
     label.innerText=taskString;
-    label.className="task todos__lbl";
+    label.className="task todos__label";
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -87,7 +87,7 @@ var editTask=function(){
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector(".todos__input");
-    var label=listItem.querySelector(".todos__lbl");
+    var label=listItem.querySelector(".todos__label");
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("todos__edit-mode");
     //If class of the parent is .editmode
