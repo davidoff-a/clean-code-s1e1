@@ -1,83 +1,69 @@
+<!doctype html>
 <html>
-
-<HEAD>
-  <title>
-    Todo App
-  </title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-
-<body>
-  <div class="aaa">
-    <img src="./eisenhower-matrix.jpg">
-    <a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">
-      Want more details&quest;
-    </a>
-  </div>
-  <div class="centered-main-page-element">
-    <p id='topSectionForAddingElementToList'>
-      <label for="new-task">
-        Add Item
-      </label>
-      <div class="task-row-wrapper">
-        <input id='new-task' class="task" type="text">
-        <button>
-          Add
-        </button>
-      </div>
-    </p>
-    <h3>
-      Todo
-    </h3>
-    <ul id='incompleteTasks'>
-      <li>
-        <input type='checkbox'>
-        <label class="task">
-          Pay Bills
-        </label>
-        <input type="text">
-        <button class="edit">Edit
-        </button>
-        <button class="delete">
-          <img src="./remove.svg">
-        </button>
-      </li>
-      <li class="editMode">
-        <input type="checkbox">
-        <label class="task">
-          Go Shopping
-        </label>
-        <input type="text" value="Go Shopping" class="task">
-        <button class='edit'>
-          Save
-        </button>
-        <button class="delete">
-          <img src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-    <h3>
-      Completed
-    </h3>
-    <ul id="completed-tasks">
-      <li>
-        <input type="checkbox" checked>
-        <label class="task">
-          See the Doctor
-        </label>
-        <input type="text" class="task">
-        <button class="edit">
-          Edit
-        </button>
-        <button class="delete">
-          <img src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-  </div>
-  <script type="text/javascript" SRC="app.js">
-  </script>
-</body>
-
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css"  media="screen" charset="utf-8">
+  </head>
+  <body class="general">
+    <header class="header">
+      <img src="./eisenhower-matrix.jpg" class="header__img" alt="eisenhower matrix">
+        <a 
+            class="header__link" 
+            href="https://goal-life.com/page/method/matrix-eisenhower">
+                Want more details?
+        </a>
+    </header>
+    <main>
+      <article class="container">
+        <section class="todos">
+          <h3 class="todos__title todos__title_add">
+            Add Item
+          </h3>
+          <div class="todos__wrapper">
+            <input id="todos__task_add" class="task" type="text">
+            <button class="todos__btn">Add</button>
+          </div>
+        </section>
+        <section  class="todos">
+          <h3 class="todos__title">Todo</h3>
+          <ul id="todos__incomplete-tasks" class="todos__list">
+            <li class="todos__list-item">
+              <input type="checkbox"  class="todos__flag">
+              <label class="task todos__label ">Pay Bills</label>
+              <input type="text" class="todos__input todos__input_hide task">
+              <button class="todos__btn edit">Edit</button>
+              <button class="todos__btn del">
+                <img src="./remove.svg" class="del__img" alt="remove task">
+              </button>
+            </li>
+            <li class="todos__list-item todos__edit-mode">
+              <input type="checkbox" class="todos__flag">
+              <label class="task todos__label">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="task todos__input">
+              <button class="todos__btn edit">Save</button>
+              <button class="todos__btn del">
+                <img src="./remove.svg" class="del__img" alt="remove task">
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section  class="todos">
+          <h3 class="todos__title">Completed</h3>
+          <ul id="todos__completed-tasks" class="todos__list">
+            <li class="todos__list-item">
+              <input type="checkbox"  class="todos__flag" checked>
+              <label class="task todos__label">See the Doctor</label>
+              <input type="text" class="task todos__input todos__input_hide">
+              <button class="todos__btn edit">Edit</button>
+              <button class="todos__btn del">
+                <img src="./remove.svg" class="del__img" alt="remove task">
+              </button>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
