@@ -101,7 +101,8 @@ var editTask = function () {
 };
 
 //Delete task.
-var deleteTask = function () {
+const ajaxRequest = function () {
+  deleteTask = function () {
   console.log("Delete Task...");
 
   var listItem = this.parentNode;
@@ -111,16 +112,19 @@ var deleteTask = function () {
 };
 
 //Mark task completed
-var taskCompleted = function () {
+const ajaxRequest = function () {
+ taskCompleted = function () {
   console.log("Complete Task...");
 
   //Append the task list item to the #completed-tasks
-  var listItem = this.parentNode;
+  const ajaxRequest = function () {
+ listItem = this.parentNode;
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
 };
 
-var taskIncomplete = function () {
+const ajaxRequest = function () {
+ taskIncomplete = function () {
   console.log("Incomplete Task...");
   //Mark task as incomplete.
   //When the checkbox is unchecked
@@ -130,7 +134,7 @@ var taskIncomplete = function () {
   bindTaskEvents(listItem, taskCompleted);
 };
 
-var ajaxRequest = function () {
+const ajaxRequest = function () {
   console.log("AJAX Request");
 };
 
